@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Email Template</title>
+  <style>
+    /* CSS Reset */
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    li,
+    table,
+    td,
+    tr,
+    th,
+    img {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: none;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    /* Email-specific styles */
+    table {
+      width: 100%;
+      max-width: 600px;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    /* Images */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* navbar */
+
+    nav {
+      background-color: #CBE4DE;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav li {
+      float: left;
+    }
+
+    nav li a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      align-items: center;
+    }
+
+    nav li a:hover {
+      background-color: #fff;
+    }
+
+    .creative {
+      height: auto;
+      width: auto;
+      border-radius: 25% 10%;
+      max-width: 300px;
+      max-height: 300px;
+      padding: 8%;
+    }
+
+    .brand {
+      height: auto;
+      width: auto;
+      border-radius: 25% 10%;
+      max-width: 300px;
+      max-height: 300px;
+      padding: 8%;
+    }
+
+    .analysis {
+      height: auto;
+      width: auto;
+      border-radius: 25% 10%;
+      max-width: 300px;
+      max-height: 300px;
+      padding: 8%;
+    }
+
+    .explore {
+      height: auto;
+      width: auto;
+      border-radius: 25% 10%;
+      max-width: 300px;
+      max-height: 300px;
+      padding: 8%;
+    }
+
+    .arrow {
+      height: auto;
+      width: auto;
+      max-width: 20px;
+      max-height: 20px;
+      position: relative;
+      left: 70px;
+      top: 28px;
+    }
+
+    .crafting {
+      height: auto;
+      width: auto;
+      max-width: 330px;
+      max-height: 330x;
+      padding: 8%;
+      position: relative;
+      right: 170px;
+      top: 150px;
+    }
+
+    .crafting-area {
+      background-color: #CBE4DE;
+    }
+
+    /* Text */
+
+    .one {
+      margin: 20px 50px 20px;
+      padding: 3% 0;
+    }
+
+    .two {
+      margin: 20px 50px 20px;
+      padding: 3% 0;
+    }
+
+    .three {
+      margin: 20px 50px 20px;
+      padding: 3% 0;
+    }
+
+    .card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      margin: 16px;
+      display: inline-block;
+      background-color: #fff;
+    }
+
+    .card-color {
+      background-color: #CBE4DE;
+    }
+
+    .card h2 {
+      font-size: 24px;
+      margin: 16px 0;
+    }
+
+    .card p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .card a {
+      display: block;
+      text-align: center;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      background-color: #0069d9;
+    }
+
+
+
+    .accounting {
+      height: auto;
+      width: auto;
+      border-radius: 25% 10%;
+      max-width: 300px;
+      max-height: 300px;
+      padding: 8%;
+    }
+
+    .financial {
+      height: auto;
+      width: auto;
+      border-radius: 25% 10%;
+      max-width: 300px;
+      max-height: 300px;
+      padding: 8%;
+    }
+
+    /* social-media links */
+
+    .facebook {
+      margin: 20px 10px;
+      height: auto;
+      width: auto;
+      padding: 10px;
+      max-width: 150px;
+      max-height: 150px;
+      position: relative;
+      top: 15px;
+    }
+
+    .instagram {
+      margin: 20px 10px;
+      height: auto;
+      width: auto;
+      padding: 10px;
+      max-width: 150px;
+      max-height: 150px;
+      position: relative;
+      top: 15px;
+    }
+
+    .linkedin {
+      margin: 20px 10px;
+      height: auto;
+      width: auto;
+      padding: 10px;
+      max-width: 150px;
+      max-height: 150px;
+      position: relative;
+      top: 15px;
+    }
+
+
+    .paragraph {
+      padding: 2% 0;
+    }
+
+    .heading {
+      padding: 10% 0;
+    }
+
+    .top-container .paragraph-1 {
+      height: 300px;
+      width: 300px;
+      border-radius: 50px;
+      background-color: lightblue;
+    }
+
+
+    .digital-agency-text {
+      position: relative;
+      bottom: 220px;
+      left: 145px;
+    }
+
+    .dummy-text {
+      position: relative;
+      bottom: 220px;
+      left: 150px;
+      padding: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      position: relative;
+      bottom: 220px;
+      left: 150px;
+    }
+
+
+    /* Header */
+    .header {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Body */
+    .body {
+      background-color: #CBE4DE;
+      padding: 20px;
+
+    }
+
+    .body p {
+      margin-bottom: 20px;
+    }
+
+    /* Button */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+
+
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+      font-size: 14px;
+      color: #6c757d;
+      text-align: center;
+    }
+
+    footer a {
+      color: #6c757d;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #0d6efd;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .col-md-6 {
+      text-align: center;
+    }
+
+    .list-inline-item {
+      margin-right: 20px;
+    }
+
+    .table-bottom {
+      background-color: #f8f9fa;
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 600px) {
+
+      /* Adjust table widths */
+      table {
+        max-width: 100% !important;
+      }
+
+      /* Adjust header */
+      .header {
+        padding: 10px;
+
+      }
+
+      .header h1 {
+        font-size: 20px;
+      }
+
+      /* Adjust body */
+      .body {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td class="header">
+        <h1>New Generation Digital Company</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="body">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="images/laptop.jpg" alt="laptop-img">
+        <p><a href="#" class="button">Send Request</a></p>
+        <h1>We Create Unique Experiences</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Porttitor massa id</p>
+      </td>
+
+    </tr>
+    <tr>
+      <td>
+        <img class="creative" src="images/creative.jpg" alt="creative-img">
+        <h2>Creative Websites</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod</p>
+        <a href="#"><img class="arrow" src="images/arrow.png" alt="arrow-img"></a>
+        <p>Read More</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img class="brand" src="images/brand.jpg" alt="brand-img">
+        <h2>Brand Solutions</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod</p>
+        <a href="#"><img class="arrow" src="images/arrow.png" alt="arrow-img"></a>
+        <p>Read More</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img class="analysis" src="images/analysis.jpg" alt="analysis-img">
+        <h2>Expert analysis</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod</p>
+        <a href="#"><img class="arrow" src="images/arrow.png" alt="arrow-img"></a>
+        <p>Read More</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img class="explore" src="images/explore.jpg" alt="right-explore-img">
+        <h2>Explore Work</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod</p>
+        <a href="#"><img class="arrow" src="images/arrow.png" alt="arrow-img"></a>
+        <p>Read More</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="crafting-area">
+        <img class="crafting" src="images/crafting.jpg" alt="crafting-img">
+        <h2 class="digital-agency-text">A Digital Agency Crafting<br> Beautiful Experiences</h2>
+        <p class="dummy-text">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod</p>
+        <p><a href="#" class="button">Read More</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h1>Our Working Process</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod</p>
+        <img class="one" src="images/one.png" alt="one-img">
+        <h2>Analysis & Work</h2>
+        <img class="two" src="images/two.png" alt="two-img">
+        <h2> Design & Develop</h2>
+        <img class="three" src="images/three.png" alt="three-img">
+        <h2>Test & Deliver</h2>
+        <p class="paragraph">Unlimited Power And Customization</p>
+        <p class="paragraph">Possibilities Think Ahead And</p>
+        <p class="paragraph">Boost Your Online Business Growth</p>
+        <p><a href="#" class="button">Read More</a></p>
+        <h1 class="heading">Creative Plans For Creative Thinkers Under Budget</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="card-color">
+        <div class="card">
+          <h2>Professional Plan</h2>
+          <p>$199</p>
+          <p>per month</p>
+          <p>responsive</p>
+          <p>live streaming</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="card">
+          <h2>Business Plan</h2>
+          <p>$299</p>
+          <p>per month</p>
+          <p>responsive</p>
+          <p>live straming</p>
+          <p>adaptive bitrate</p>
+          <p>analysis</p>
+          <a href="#">Read More</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h1>Awesome Case Studies</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <img class="accounting" src="images/accounting.jpg" alt="accounting-img">
+        <p>BusinessAccounting</p>
+        <p>Wealth & Capital</p>
+        <p>Management</p>
+        <p>posted on feb 10,2023/seo</p>
+        <a href="#"><img class="arrow" src="images/arrow.png" alt="arrow-img"></a>
+        <p>Read More</p>
+        <img class="financial" src="images/financial.jpg" alt="financial-img">
+        <p>Financial Services</p>
+        <p>Core Customer</p>
+        <p>Certric Approach</p>
+        <p>posted on feb 10,2023/seo</p>
+        <a href="#"><img class="arrow" src="images/arrow.png" alt="arrow-img"></a>
+        <p>Read More</p>
+      </td>
+    </tr>
+
+    <tr class="table-bottom">
+      <td>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p>&copy; 2023 New Generation Marketing Company</p>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-inline text-md-end">
+                  <li class="list-inline-item"><a href="#">Latest News</a></li>
+                  <li class="list-inline-item"><a href="#"> Have Questions</a></li>
+                  <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                  <li class="list-inline-item"><a href="#">About Studies</a></li>
+                  <a class="facebook" href="#"><img src="images/facebook.png" alt="facebook-img"></a>
+                  <a class="instagram" href="#"><img src="images/instagram.png" alt="instagram-img"></a>
+                  <a class="linkedin" href="#"><img src="images/linkedin.png" alt="instagram-img"></a>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
